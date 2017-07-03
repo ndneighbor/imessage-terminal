@@ -22,6 +22,8 @@ module Imessage_cli
     text = gets.chomp
     send = Sender.new
     send.deliver_message(text, m)
+
+    
   end
   rescue => err
     puts("Error: #{err}\nPlease try again.")
