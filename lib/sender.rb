@@ -13,7 +13,7 @@ class Sender
           end tell
   end run
   SCRIPT
-  `osascript -e '#{script}' '#{contact}' '#{user_input}'`
+  `osascript -e '#{script}' '#{contact}' '#{text}'`
 end
 end
 end

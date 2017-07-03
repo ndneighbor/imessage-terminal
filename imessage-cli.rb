@@ -12,7 +12,6 @@ module Imessage_cli
     puts "You are speaking to MJ!"
   else
     puts 'Ready to chat!'
-    puts m == "+1(786)6172017"
   end
   ARGV.clear
 
@@ -21,7 +20,6 @@ module Imessage_cli
     prompt = '> '
     print prompt
     text = gets.chomp
-    puts user_input
     send = Sender.new
     send.deliver_message(text, m)
   end
