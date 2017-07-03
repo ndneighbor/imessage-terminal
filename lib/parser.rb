@@ -4,6 +4,7 @@ require 'ostruct'
 module Imessage_cli
   class Parser
     class << self
+      options = nil
       def parse(options)
         OpenStruct.new.tap do |args|
           args.contact = nil
@@ -12,6 +13,7 @@ module Imessage_cli
           opt_parser(args).parse!(options)
         end
       end
+      
 
       private
 
