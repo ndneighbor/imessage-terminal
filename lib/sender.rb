@@ -1,17 +1,6 @@
-module Imessage_ruby
+module Imessage_cli
 # def index
 class Sender
-begin
-  user_input = nil
-  puts 'Ready to chat!'
-
-  until user_input == '/exit'
-    prompt = '> '
-    print prompt
-    user_input = gets.chomp
-  end
-
-
 
   def deliver_message(text, contact)
   script = <<-SCRIPT
@@ -23,9 +12,8 @@ begin
           end tell
   end run
   SCRIPT
-  `osascript -e '#{script}' '#{contact}' '#{text}'`
+  `osascript -e '#{script}' '#{contact}' '#{user_input}'`
 end
-rescue => err
-  puts("Error: #{err}\nPlease try again.")
-  retry
+
+end
 end
