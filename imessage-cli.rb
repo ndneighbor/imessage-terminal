@@ -5,21 +5,30 @@ require_relative 'lib/sender'
 module Imessage_cli
 
   begin
-
-  ARGV.clear
+  contact = ARGV
   user_input = nil
-  puts 'Ready to chat!'
+  m = contact*","
+  if m == "+1(786)6172017"
+    puts "You are speaking to MJ!"
+  else
+    puts 'Ready to chat!'
+    puts m == "+1(786)6172017"
+  end
+  ARGV.clear
+
 
   until user_input == '/exit'
     prompt = '> '
     print prompt
-    user_input = gets.chomp
+    text = gets.chomp
+    puts user_input
     send = Sender.new
-    send.deliver(user_input)
+    send.deliver_message(text, m)
   end
   rescue => err
     puts("Error: #{err}\nPlease try again.")
+end
 
 end
-end
+
 
