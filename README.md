@@ -1,10 +1,10 @@
 # IMESSAGE TERMINAL
 
-A cli interface to send messages in your terminal to your parental or friend unit
+> A cli interface to send messages in your terminal to your parental or friend unit
 
 ### The Story
 
-When at work, I usually have a 4 panel terminal instance of monitoring tests and logs
+When at work, I usually have a 4 panel terminal doing tom foolery, tests, and logs
 
 I really dislike context switching so I made this ruby app that allows you to chat to a user.
 As for now, I keep my phone with me I look at the messages there and respond in term but hope
@@ -39,18 +39,18 @@ ruby imessage-cli.rb "CONTACT_NUMBER"
 
 ## Roadmap
 
-Like any sane project we use adhere to semantic versioning
+Like any sane project we adhere to semantic versioning
 
-0.2.0 - Add contact replies in the interface
-0.3.0 - Add better command-line options and options handling
-0.4.0 - Support changing target contact mid application
-0.5.0 - I should be adding tests anyways but by here we should be at 100 percent coverage
-0.8.0 - API exposing AppleScript endpoints for cross platform client
-1.0.0 - Ruby gem release
+- [ ] 0.2.0 - Add contact replies in the interface
+- [ ] 0.3.0 - Add better command-line options and options handling
+- [ ] 0.4.0 - Support changing target contact mid application
+- [ ] 0.5.0 - I should be adding tests anyways but by here we should be at 100 percent coverage
+- [ ] 0.8.0 - API exposing AppleScript endpoints for cross platform client
+- [ ] 1.0.0 - Ruby gem release
 
 ### Thanks
 
 This area is reserved for awknowledgement
 I am accepting issues and PRs so feel free to ping me at @ndneighbor on Twitter and here
 
-(This wouldn't be possible if I didn't get inspired by https://github.com/linjunpop/imessage)
+(This wouldn't be possible if I didn't see how this was done https://github.com/linjunpop/imessage)
