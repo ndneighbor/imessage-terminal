@@ -17,6 +17,7 @@ iMessage.
 ## Useage
 
 This project has been tested on Ruby 2 or greater 
+
 Right now it is on version 0.10
 
 ### Getting Started
