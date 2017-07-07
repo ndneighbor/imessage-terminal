@@ -8,11 +8,7 @@ module Imessage_cli
   contact = ARGV
   user_input = nil
   m = contact*","
-  if m == "+1(786)6172017"
-    puts "You are speaking to MJ!"
-  else
-    puts 'Ready to chat!'
-  end
+  puts 'Ready to chat!'
   ARGV.clear
 
 
