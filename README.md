@@ -42,7 +42,7 @@ ruby imessage-cli.rb "CONTACT_NUMBER"
 
 Like any sane project we adhere to semantic versioning
 
-- [ ] 0.2.0 - Add contact replies in the interface
+- [x] 0.2.0 - Add contact replies in the interface
 - [ ] 0.3.0 - Add better command-line options and options handling
 - [ ] 0.4.0 - Support changing target contact mid application
 - [ ] 0.5.0 - I should be adding tests anyways but by here we should be at 100 percent coverage
